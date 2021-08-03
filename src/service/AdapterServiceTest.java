@@ -23,11 +23,17 @@ public class AdapterServiceTest {
         PinoQuadradoAdapter pinoQuadradoAdaptadoPequeno = new PinoQuadradoAdapter(pinoQuadradoPequeno);
         PinoQuadradoAdapter pinoQuadradoAdaptadoGrande = new PinoQuadradoAdapter(pinoQuadradoGrande);
 
-        (buracoRedondoVO.cabe(pinoQuadradoAdaptadoPequeno)) ?
-            System.out.println("Pino quadrado cabe no buraco redondo") : System.out.println("Pino quadrado muito grande");
+        if ((buracoRedondoVO.cabe(pinoQuadradoAdaptadoPequeno))) {
+            System.out.println("Pino quadrado pequeno cabe no buraco redondo");
+        } else {
+            System.out.println("Pino quadrado muito grande");
+        }
 
-        (buracoRedondoVO.cabe(pinoQuadradoAdaptadoGrande)) ?
-            System.out.println("Pino quadrado cabe no buraco redondo") : System.out.println("Pino quadrado muito grande");
+        if ((buracoRedondoVO.cabe(pinoQuadradoAdaptadoGrande))) {
+            System.out.println("Pino quadrado cabe no buraco redondo");
+        } else {
+            System.out.println("Pino quadrado muito grande");
+        }
 
     }
 }

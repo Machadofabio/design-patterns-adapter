@@ -2,8 +2,9 @@ package adapter;
 
 import vo.BuracoRedondoVO;
 import vo.PinoQuadradoVO;
+import vo.PinoRedondoVO;
 
-public class PinoQuadradoAdapter extends BuracoRedondoVO {
+public class PinoQuadradoAdapter extends PinoRedondoVO {
 
     private PinoQuadradoVO pinoQuadrado;
 
